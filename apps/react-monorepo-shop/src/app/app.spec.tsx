@@ -20,6 +20,6 @@ describe('App', () => {
         <App />
       </BrowserRouter>
     );
-    expect(getByText(/Welcome shop/gi)).toBeTruthy();
+    expect(getByText(/Welcome react-monorepo-shop/gi)).toBeTruthy();
   });
 });

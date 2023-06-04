@@ -1,7 +1,7 @@
 {
-  "name": "shop",
+  "name": "react-monorepo-shop",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/shop/src",
+  "sourceRoot": "apps/react-monorepo-shop/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/shop"
+        "outputPath": "dist/apps/react-monorepo-shop"
       },
       "configurations": {
         "development": {
@@ -24,16 +24,16 @@
       "executor": "@nx/vite:dev-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "shop:build"
+        "buildTarget": "react-monorepo-shop:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "shop:build:development",
+          "buildTarget": "react-monorepo-shop:build:development",
           "port": 4201,
           "hmr": true
         },
         "production": {
-          "buildTarget": "shop:build:production",
+          "buildTarget": "react-monorepo-shop:build:production",
           "port": 4201,
           "hmr": false
         }
@@ -43,36 +43,36 @@
       "executor": "@nx/vite:preview-server",
       "defaultConfiguration": "development",
       "options": {
-        "buildTarget": "shop:build"
+        "buildTarget": "react-monorepo-shop:build"
       },
       "configurations": {
         "development": {
-          "buildTarget": "shop:build:development"
+          "buildTarget": "react-monorepo-shop:build:development"
         },
         "production": {
-          "buildTarget": "shop:build:production"
+          "buildTarget": "react-monorepo-shop:build:production"
         }
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["coverage/apps/shop"],
+      "outputs": ["coverage/apps/react-monorepo-shop"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/shop"
+        "reportsDirectory": "../../coverage/apps/react-monorepo-shop"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/shop/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/react-monorepo-shop/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "shop:build"
+        "buildTarget": "react-monorepo-shop:build"
       }
     }
   },

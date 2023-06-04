@@ -1,4 +1,3 @@
-import './app.module.scss';
 import { sumTwoNumbers } from '@angular-monorepo-todo/utils';
 
 export function App() {

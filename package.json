@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "react": "npx nx run shop:serve",
+    "react": "npx nx run react-monorepo-shop:serve",
     "angular": "npx nx run angular-monorepo-todo:serve",
-    "dev": "concurrently --kill-others \"npx nx run angular-monorepo-todo:serve\" \"npx nx run shop:serve\""
+    "dev": "concurrently --kill-others \"npx nx run angular-monorepo-todo:serve\" \"npx nx run react-monorepo-shop:serve\""
   },
   "private": true,
   "dependencies": {
