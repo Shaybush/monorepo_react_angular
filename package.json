@@ -5,6 +5,7 @@
   "scripts": {
     "react": "npx nx run react-monorepo-shop:serve",
     "angular": "npx nx run angular-monorepo-todo:serve",
+    "server": "npx nx run server-monorepo:serve",
     "dev": "concurrently --kill-others \"npx nx run angular-monorepo-todo:serve\" \"npx nx run react-monorepo-shop:serve\""
   },
   "private": true,
